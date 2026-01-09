@@ -1,0 +1,80 @@
+// ==========================================================================
+// Size Tokens - Spacing, Radius, Layout
+// ==========================================================================
+
+// --------------------------------------------------------------------------
+// Spacing Scale (4px 기반)
+// --------------------------------------------------------------------------
+$spacing-0: 0;
+$spacing-1: 0.25rem;   // 4px
+$spacing-2: 0.5rem;    // 8px
+$spacing-3: 0.75rem;   // 12px
+$spacing-4: 1rem;      // 16px
+$spacing-5: 1.25rem;   // 20px
+$spacing-6: 1.5rem;    // 24px
+$spacing-8: 2rem;      // 32px
+$spacing-10: 2.5rem;   // 40px
+$spacing-12: 3rem;     // 48px
+$spacing-16: 4rem;     // 64px
+$spacing-20: 5rem;     // 80px
+$spacing-24: 6rem;     // 96px
+
+// --------------------------------------------------------------------------
+// Border Radius
+// --------------------------------------------------------------------------
+$radius-none: 0;
+$radius-sm: 0.25rem;   // 4px
+$radius-md: 0.5rem;    // 8px
+$radius-lg: 0.75rem;   // 12px
+$radius-xl: 1rem;      // 16px
+$radius-2xl: 1.25rem;  // 20px
+$radius-3xl: 1.5rem;   // 24px
+$radius-full: 9999px;
+
+// --------------------------------------------------------------------------
+// Breakpoints (3계층: mobile / tablet / desktop)
+// --------------------------------------------------------------------------
+$breakpoint-sm: 640px;   // mobile < sm < tablet
+$breakpoint-lg: 1024px;  // tablet < lg < desktop
+
+$breakpoints: (
+  sm: $breakpoint-sm,
+  lg: $breakpoint-lg,
+);
+
+// --------------------------------------------------------------------------
+// Z-Index Scale
+// --------------------------------------------------------------------------
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+
+// --------------------------------------------------------------------------
+// CSS Custom Properties
+// --------------------------------------------------------------------------
+:root {
+  --spacing-1: #{$spacing-1};
+  --spacing-2: #{$spacing-2};
+  --spacing-3: #{$spacing-3};
+  --spacing-4: #{$spacing-4};
+  --spacing-5: #{$spacing-5};
+  --spacing-6: #{$spacing-6};
+  --spacing-8: #{$spacing-8};
+  --spacing-10: #{$spacing-10};
+  --spacing-12: #{$spacing-12};
+  --spacing-16: #{$spacing-16};
+  --spacing-20: #{$spacing-20};
+  --spacing-24: #{$spacing-24};
+
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-xl: #{$radius-xl};
+  --radius-2xl: #{$radius-2xl};
+  --radius-3xl: #{$radius-3xl};
+  --radius-full: #{$radius-full};
+}

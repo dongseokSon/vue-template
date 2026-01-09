@@ -1,0 +1,97 @@
+// ==========================================================================
+// Typography Tokens
+// ==========================================================================
+
+// --------------------------------------------------------------------------
+// Font Family
+// --------------------------------------------------------------------------
+$font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif;
+$font-mono: 'Fira Code', 'Consolas', 'Monaco', monospace;
+
+// --------------------------------------------------------------------------
+// Typography Keys (자동완성용)
+// 네이밍: text-{size}{weight} (R=Regular, M=Medium, SB=SemiBold, B=Bold)
+// --------------------------------------------------------------------------
+$text-36B: '36B';
+$text-30B: '30B';
+$text-24SB: '24SB';
+$text-20SB: '20SB';
+$text-18M: '18M';
+$text-18R: '18R';
+$text-16M: '16M';
+$text-16R: '16R';
+$text-14M: '14M';
+$text-14R: '14R';
+$text-12R: '12R';
+
+// --------------------------------------------------------------------------
+// Typography Presets
+// --------------------------------------------------------------------------
+$typography: (
+  '36B': (
+    font-size: 2.25rem,
+    line-height: 1.25,
+    font-weight: 700,
+    letter-spacing: -0.025em,
+  ),
+  '30B': (
+    font-size: 1.875rem,
+    line-height: 1.25,
+    font-weight: 700,
+    letter-spacing: -0.025em,
+  ),
+  '24SB': (
+    font-size: 1.5rem,
+    line-height: 1.375,
+    font-weight: 600,
+  ),
+  '20SB': (
+    font-size: 1.25rem,
+    line-height: 1.375,
+    font-weight: 600,
+  ),
+  '18M': (
+    font-size: 1.125rem,
+    line-height: 1.5,
+    font-weight: 500,
+  ),
+  '18R': (
+    font-size: 1.125rem,
+    line-height: 1.625,
+    font-weight: 400,
+  ),
+  '16M': (
+    font-size: 1rem,
+    line-height: 1.5,
+    font-weight: 500,
+  ),
+  '16R': (
+    font-size: 1rem,
+    line-height: 1.5,
+    font-weight: 400,
+  ),
+  '14M': (
+    font-size: 0.875rem,
+    line-height: 1.5,
+    font-weight: 500,
+  ),
+  '14R': (
+    font-size: 0.875rem,
+    line-height: 1.5,
+    font-weight: 400,
+  ),
+  '12R': (
+    font-size: 0.75rem,
+    line-height: 1.5,
+    font-weight: 400,
+  ),
+);
+
+// --------------------------------------------------------------------------
+// CSS Custom Properties
+// --------------------------------------------------------------------------
+:root {
+  --font-sans: #{$font-sans};
+  --font-mono: #{$font-mono};
+}

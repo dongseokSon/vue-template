@@ -1,0 +1,25 @@
+// ==========================================================================
+// Design System - Barrel File
+// ==========================================================================
+// 이 파일을 import하면 모든 디자인 토큰과 믹스인을 사용할 수 있습니다.
+//
+// 사용법 (Vue 컴포넌트):
+// <style lang="scss">
+// @use '@/assets/scss' as *;
+// </style>
+//
+// 또는 vite.config.ts에서 전역 설정:
+// css: {
+//   preprocessorOptions: {
+//     scss: {
+//       additionalData: `@use "@/assets/scss" as *;`
+//     }
+//   }
+// }
+// ==========================================================================
+
+// Forward all abstracts (variables, mixins, functions)
+@forward 'abstracts/colors';
+@forward 'abstracts/sizes';
+@forward 'abstracts/typography';
+@forward 'abstracts/mixins';

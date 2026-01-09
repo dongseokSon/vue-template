@@ -1,0 +1,19 @@
+// ==========================================================================
+// Global Styles
+// ==========================================================================
+
+@use 'abstracts/colors';
+@use 'abstracts/sizes';
+@use 'abstracts/typography';
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,26 +1,21 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import BaseInput from '@/components/BaseInput.vue'
 
 const text = ref('')
 </script>
 
 <template>
   <main>
-    <input v-model="text" placeholder="입력하세요" />
+    <BaseInput v-model="text" placeholder="입력하세요" />
     <p>{{ text }}</p>
+
+    <div>에이</div>
   </main>
 </template>
 
 <style lang="scss" scoped>
 main {
-  input {
-    border: 1px solid #ccc;
-
-    &:focus {
-      border-color: blue;
-    }
-  }
-
   p {
     color: white;
   }

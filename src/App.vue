@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import DarkModeToggler from './components/DarkModeToggler.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink :to="AppRoutes.ABOUT.path">{{ AppRoutes.ABOUT.label }}</RouterLink>
         <RouterLink :to="AppRoutes.TEST.path">{{ AppRoutes.TEST.label }}</RouterLink>
       </nav>
+      <DarkModeToggler />
     </div>
   </header>
 

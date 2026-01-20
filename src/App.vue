@@ -26,4 +26,8 @@ import CommonButton from './components/CommonButton.vue'
   gap: 1rem;
   padding: 2rem;
 }
+
+.blue-button:deep() {
+  width: 100%;
+}
 </style>

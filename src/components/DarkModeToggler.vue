@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CommonButton from './CommonButton.vue'
+
 const isDark = ref(document.documentElement.dataset.theme === 'dark')
 
 function toggle() {
@@ -14,22 +16,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <button @click="toggle" class="dark-mode-toggler">
+  <CommonButton variant="white" @click="toggle">
     {{ isDark ? 'Light' : 'Dark' }}
-  </button>
+  </CommonButton>
 </template>
-
-<style lang="scss" scoped>
-.dark-mode-toggler {
-  padding: $spacing-2 $spacing-4;
-  border: 1px solid var(--color-border-default);
-  border-radius: $radius-md;
-  background: var(--color-bg-secondary);
-  color: var(--color-text-primary);
-  cursor: pointer;
-
-  &:hover {
-    background: var(--color-bg-tertiary);
-  }
-}
-</style>

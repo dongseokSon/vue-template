@@ -23,7 +23,7 @@ const isDisabled = computed(() => props.disabled || props.loading)
     :disabled="isDisabled"
   >
     <span v-if="loading" class="spinner"></span>
-    <slot />
+    <slot>버튼</slot>
   </button>
 </template>
 

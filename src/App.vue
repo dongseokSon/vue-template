@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import DarkModeToggler from './components/DarkModeToggler.vue'
+import CommonButton from './components/CommonButton.vue'
 </script>
 
 <template>
@@ -20,10 +21,26 @@ import DarkModeToggler from './components/DarkModeToggler.vue'
     </div>
   </header>
 
+  <main class="button-showcase">
+    <CommonButton variant="blue">Blue</CommonButton>
+    <CommonButton variant="blue" :loading="true">Blue Loading</CommonButton>
+    <CommonButton variant="green">Green</CommonButton>
+    <CommonButton variant="white">White</CommonButton>
+    <CommonButton variant="gray">Gray</CommonButton>
+    <CommonButton variant="transparent">Transparent</CommonButton>
+  </main>
+
   <RouterView />
 </template>
 
 <style scoped>
+.button-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
+
 header {
   line-height: 1.5;
   max-height: 100vh;
